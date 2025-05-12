@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Pacifico";
+    src: url(./fonts/Pacifico-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(./fonts/Merriweather.ttf)format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#content{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27548A;
+    
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3E0;
+    color: #c0392b;
+    height: 150px;
+    gap: 20px;
+}
+
+header > h1 {
+    font-family: "Pacifico", sans-serif;
+    font-size: 3.5rem;
+
+}
+
+nav > .btn{
+    border: none;
+    background-color: transparent;
+    color: #BE5B50;
+    padding: 10px 50px;
+    font-family: "Merriweather", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    
+}
+
+.btn.active {
+    background-color: #27548A;
+    color: #F3F3E0;
+}
+
+/*HOMEPAGE*/
+
+
+.homepage{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #27548A;
+}
+
+.homepage > h1 {
+    font-size: 1.5rem;
+    color: #F3F3E0;
+    
+}
+
+.homepage > img {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/*MENU*/
+
+.menuPage{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    
+}
+
+.headingMenu {
+    color: #c0392b;
+    font-family: "Pacifico", cursive;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    background-color: #F3F3E0;
+    border-radius: 50px;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card{
+    
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #F3F3E0;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 1);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.card h2 {
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #2c3e50;
+}
+
+.card h3 {
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/*CONTACT*/
+
+.about{
+   
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 500px;
+    
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cardDiv {
+   
+    padding: 1rem;
+    overflow: hidden;
+    text-align: left; 
+}
+
+.cardDiv h2{
+    color: #ffffff;
+    font-family: "Merriweather", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.cardDiv h3, .cardDiv li{
+    color: #ffffff;
+    font-size: 1rem;
+    list-style: none;
+}
+
